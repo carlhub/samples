@@ -1,0 +1,53 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title></title>
+
+
+
+<style type="text/css">
+	#menulink	{
+ 				display: none;
+			}
+</style>
+
+
+
+
+<script language="JavaScript">
+function showOrHide(zap) {
+ if (document.getElementById) {
+  var abra = document.getElementById(zap).style;
+  if (abra.display == "block") {
+   abra.display = "none";
+   } else {
+   abra.display = "block";
+  } 
+  return false;
+  } else {
+  return true;
+ }
+}
+</script>
+
+
+
+
+
+</head>
+
+<body>
+
+  <h5><a href="#" onclick="return showOrHide('menulink');">click to show or hide menu</a></h5>
+  <ul id="menulink">
+   <li><a href="">O</a></li>
+   <li><a href="">S</a></li>         
+   <li><a href="">A</a></li>
+   <li><a href="">M</a></li>
+   <li><a href="">M</a></li> 
+  </ul>
+  
+</body>
+</html>
